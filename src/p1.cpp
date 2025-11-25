@@ -3,8 +3,29 @@
 #include <iostream>
 using namespace std;
 
+long long factorial(int n){
+    if(n==0||n==1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+}
+
+long long sum(int n){
+    if(n==1){
+        return 1;
+    }if(n==0){
+        return 0;
+    }else{
+        return n+sum(n-1);
+    }
+    
+}
 int main() {
-    
-    
+    int n;
+    cin>>n;
+    int r1=factorial(n);
+    int r2=sum(n);
+    cout<<r1<<"\n"<<r2<<endl;
     return 0;
 }
