@@ -24,8 +24,8 @@ long long sum(int n){
 int main() {
     int n;
     cin>>n;
-    int r1=factorial(n);
-    int r2=sum(n);
+    long long r1=factorial(n);
+    long long r2=sum(n);
     cout<<r1<<"\n"<<r2<<endl;
     return 0;
 }
