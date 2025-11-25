@@ -4,11 +4,11 @@
 using namespace std;
 
 int gcd(int a, int b){
-    if(a==b){
-        return a;}
-    if(a>b){
-        return gcd(a-b, b);}
-    return gcd(a, b-a);
+    if(b==0){
+        return a;
+    }else{
+        return (b, a%b);
+    }
 }
 
 int main(){
